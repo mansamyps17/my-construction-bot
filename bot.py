@@ -27,7 +27,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     welcome_text = (
-        "សួស្តីបាទ! ស្វាគមន៍មកកាន់ក្រុមហ៊ុនសំណង់របស់យើង។ 🙏\n"
+        "សួស្តីបាទ សាមី! ស្វាគមន៍មកកាន់ក្រុមហ៊ុនសំណង់របស់យើង។ 🙏\n"
         "តើខ្ញុំអាចជួយអ្វីអ្នកបានខ្លះនៅថ្ងៃនេះ? សូមជ្រើសរើស Menu ខាងក្រោម៖"
     )
     await update.message.reply_text(welcome_text, reply_markup=reply_markup)
@@ -39,7 +39,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
             "🚧 **គម្រោងបច្ចុប្បន្នរបស់យើង៖**\n\n"
             "1. វីឡាទោល ម៉ូដ Modern (ភ្នំពេញថ្មី) - បញ្ចប់បាន ៩០%\n"
             "2. ផ្ទះល្វែង E0, E1 (ផ្លូវជាតិលេខ ៦) - កំពុងបុកគ្រឹះ\n\n"
-            "👉 លោកអ្នកអាចទាក់ទងមកកាន់លេខ 012-345-678 សម្រាប់ព័ត៌មានលម្អិត។"
+            "👉 លោកអ្នកអាចទាក់ទងមកកាន់លេខ 016-28-29-20 សម្រាប់ព័ត៌មានលម្អិត។"
         )
     elif text == '💰 ប៉ាន់ស្មានតម្លៃសាងសង់':
         await update.message.reply_text(
@@ -51,7 +51,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     elif text == '📞 ទាក់ទងក្រុមហ៊ុន':
         await update.message.reply_text(
             "📞 **ព័ត៌មានទំនាក់ទំនង៖**\n\n"
-            "• លេខទូរស័ព្ទ៖ 012 345 678 / 098 765 432\n"
+            "• លេខទូរស័ព្ទ៖ 016 28 29 20 / 097 777 94 99\n"
             "• អ៊ីមែល៖ info@constructionco.com\n"
             "• ម៉ោងធ្វើការ៖ ចន្ទ - សៅរ៍ (7:30 AM - 5:00 PM)"
         )
