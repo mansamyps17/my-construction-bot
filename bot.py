@@ -21,6 +21,7 @@ def run_dummy_server():
     server.serve_forever()
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    # ខ្ញុំបានបន្ថែមសញ្ញាក្បៀស (,) នៅខាងចុងជួរទី ២ ឱ្យហើយបាទ
     keyboard = [
         ['🏗️ មើលគម្រោងសំណង់', '💰 ប៉ាន់ស្មានតម្លៃសាងសង់'],
         ['📞 ទាក់ទងក្រុមហ៊ុន', '📍 ទីតាំងការិយាល័យ'],
