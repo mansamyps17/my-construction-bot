@@ -24,6 +24,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
         ['🏗️ មើលគម្រោងសំណង់', '💰 ប៉ាន់ស្មានតម្លៃសាងសង់'],
         ['📞 ទាក់ទងក្រុមហ៊ុន', '📍 ទីតាំងការិយាល័យ']
+        ['📞 ផ្សេងៗ', '📍 កំណត់សម្គាល់']
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
     welcome_text = (
@@ -58,6 +59,18 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     elif text == '📍 ទីតាំងការិយាល័យ':
         await update.message.reply_text(
             "📍 **ទីតាំងការិយាល័យកណ្តាល៖**\n\n"
+            "មហាវិថីសហព័ន្ធរុស្ស៊ី, សង្កាត់ទឹកថ្លា, ខណ្ឌសែនសុខ, រាជធានីភ្នំពេញ។\n"
+            "🔗 Link ផែនទី Google Maps: http://maps.google.com"
+        )
+    elif text == '📞 ផ្សេងៗ':
+        await update.message.reply_text(
+            "📍 **ផ្សេងៗ៖**\n\n"
+            "មហាវិថីសហព័ន្ធរុស្ស៊ី, សង្កាត់ទឹកថ្លា, ខណ្ឌសែនសុខ, រាជធានីភ្នំពេញ។\n"
+            "🔗 Link ផែនទី Google Maps: http://maps.google.com"
+        )
+    elif text == '📍 កំណត់សម្គាល់':
+        await update.message.reply_text(
+            "📍 **កំណត់សម្គាល់៖**\n\n"
             "មហាវិថីសហព័ន្ធរុស្ស៊ី, សង្កាត់ទឹកថ្លា, ខណ្ឌសែនសុខ, រាជធានីភ្នំពេញ។\n"
             "🔗 Link ផែនទី Google Maps: http://maps.google.com"
         )
