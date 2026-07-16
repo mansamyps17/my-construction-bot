@@ -23,7 +23,7 @@ def run_dummy_server():
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     keyboard = [
         ['🏗️ មើលគម្រោងសំណង់', '💰 ប៉ាន់ស្មានតម្លៃសាងសង់'],
-        ['📞 ទាក់ទងក្រុមហ៊ុន', '📍 ទីតាំងការិយាល័យ']
+        ['📞 ទាក់ទងក្រុមហ៊ុន', '📍 ទីតាំងការិយាល័យ'],
         ['📞 ផ្សេងៗ', '📍 កំណត់សម្គាល់']
     ]
     reply_markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
